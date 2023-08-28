@@ -1,0 +1,210 @@
+@charset "UTF-8";
+input, select, button {
+    outline: none;
+    border: none;
+    padding: 0px;
+    background: transparent;
+    appearance: none; /* セレクトボックスの矢印を消す */
+}
+
+.input--area:focus { /* inputタグのものをクリックした際の動き */
+    outline: #c6e3ec 2px solid;
+    background: #fff;
+}
+
+.form-base {
+    width: 100%;
+    background: #cff1ff;
+}
+
+.page-title {
+    padding-top: 60px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.inner {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.form-main {
+    padding: 50px;
+    background: #ecfaff;
+    margin-top: 60px;
+}
+
+/* フォームの中身 */
+.form-title {
+    font-size: 24px;
+    text-align: center;
+}
+.content-title {
+    font-size: 18px;
+    color: #000;
+}
+
+.content-form{
+    margin-top: 25px;
+}
+
+.content-form {
+    margin-top: 25px;
+}
+.label-text {
+    font-size: 14px;
+    color: #464646;
+}
+.required {
+    color: red;
+}
+.input--area {
+    width: 100%;
+    height: 35px;
+    margin-top: 6px;
+    padding: 5px;
+    color: #545658;
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    background: #fbfbfb;
+}
+
+.mar-top,.account-co,.account-ado,.aidm-news,.send-bot {
+    margin-top: 50px;
+}
+
+.label-section {
+    margin-top: 25px;
+}
+
+/* プルタブ */
+.select-menu {
+    margin-top: 6px;
+}
+.menu-flex {
+    display: flex;
+}
+.select-size {
+    width: 100%;
+    position: relative;
+}
+.select-size:after { /* プルタブボタンのデザイン */
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    right: 10px;
+    top: 45%;
+    display: inline-block;
+    border-bottom: 2px solid #c3c3c3;
+    border-right: 2px solid #c3c3c3;
+    transform: rotate(45deg);
+}
+
+/* 性別 */
+.gender-menu {
+    margin-left: 10px;
+}
+
+.gender-menu:first-child {
+    margin-left: 0;
+}
+
+.gender-list {
+    margin-top: 6px;
+}
+
+.gender-menu span {
+    position: relative;
+    display: inline-block;
+    padding: 3px 3px 3px 20px;
+    color: #545658;
+}
+
+.gender-menu span:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 14px;
+    height: 14px;
+    background-color: #fbfbfb;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.gender-bottan:checked + span:after { /* :checked 選択中のボタンの状態、+は指定した要素に隣接する要素に適用(これだとgender-bottanに隣接するspanにのみ適用) */
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #017cbf;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+/* チェックボックス */
+.subsuku-la {
+    position: relative;
+    padding-left: 25px;
+}
+
+.subsuku-la:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    margin-top: -8px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+}
+
+.subsuku-ch input:checked + .subsuku-la:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    width: 6px;
+    height: 13px;
+    margin-top: -11px;
+    border-right: 3px solid #0140bf;
+    border-bottom: 3px solid #0140bf;
+    transform: rotate(45deg);
+}
+
+/* 送信ボタン */
+
+.btn-send {
+    padding: 13px;
+    background: #0170bf;
+    color: #fff;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    transition: 0.3s;
+    padding: 13px;
+    width: 100%;
+}
+
+.other-tx {
+    margin-top: 25px;
+    font-size: 10px;
+}
+
+.link-color {
+    color: #0170bf;
+    text-decoration: none;
+}
